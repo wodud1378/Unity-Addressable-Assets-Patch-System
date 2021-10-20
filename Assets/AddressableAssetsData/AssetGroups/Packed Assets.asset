@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Packed Assets
+  m_EditorClassIdentifier: 
+  m_GroupName: Packed Assets
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 5a5118c956821fd44a40e50aaef43f49
+  m_SerializeEntries:
+  - m_GUID: 32e9c2aadaba9234eb6789ea87a55014
+    m_Address: Assets/TextAssets/Shop/TextAssetSample011.txt
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Sample_01
+    - default
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: d070c109eff55d348b990145ce3a6fe2
+    m_Address: Assets/TextAssets/Shop/TextAssetSample031.txt
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    m_MainAsset: {fileID: 4900000, guid: d070c109eff55d348b990145ce3a6fe2, type: 3}
+    m_TargetAsset: {fileID: 4900000, guid: d070c109eff55d348b990145ce3a6fe2, type: 3}
+  - m_GUID: 22b705818247e9444a3925573cdb8bcf
+    m_Address: Assets/TextAssets/Shop/TextAssetSample021.txt
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    m_MainAsset: {fileID: 4900000, guid: 22b705818247e9444a3925573cdb8bcf, type: 3}
+    m_TargetAsset: {fileID: 4900000, guid: 22b705818247e9444a3925573cdb8bcf, type: 3}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: a25dc323d58630341ada63a9d736add7, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 9e707152bb5fde848b9859349c20d1ee, type: 2}
+    - {fileID: 11400000, guid: efc93fa6a80866b4ca561b4429fe9808, type: 2}
