@@ -30,13 +30,6 @@ public class SampleScene : MonoBehaviour
         button.onClick.AddListener(onClick);
     }
 
-    private void SetButtonsEnable(bool isEnable)
-    {
-        patchButton.enabled = isEnable;
-        refreshButton.enabled = isEnable;
-        releaseButton.enabled = isEnable;
-    }
-
     private void LoopSampleList(Action<AddressableLabel> onLoop)
     {
         foreach (var sample in addressableSampleList)
