@@ -69,9 +69,9 @@ public class SampleScene : MonoBehaviour
         totalSize.text = $"total {size} bytes."; 
     }
 
-    private void OnDownloadedLabelCountCallback(int current, int total) 
+    private void OnDownloadedLabelCountCallback((int now, int total) obj) 
     {
-        downloadedLabelCount.text = $"{current}/{total}"; 
+        downloadedLabelCount.text = $"{obj.now}/{obj.total}"; 
     }
 
     private void OnDownloadPercentCompleteCallback(float percent)

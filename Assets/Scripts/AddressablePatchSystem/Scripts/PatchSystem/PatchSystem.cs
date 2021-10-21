@@ -48,7 +48,7 @@ public class PatchSystem : MonoBehaviour
     private Action<long> onSizeOfAll;
 
     // Download Callbacks.
-    private Action<int, int> onDownloadedLabelCount;
+    private Action<(int now, int total)> onDownloadedLabelCount;
     private Action<float> onPercentComplete;
     private Action<DownloadStatus> onDownloadState;
 
@@ -63,6 +63,15 @@ public class PatchSystem : MonoBehaviour
 
     private bool isInitialized = false;
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="targetLabels"></param>
+    /// <param name="onPatchSuccess"></param>
+    /// <param name="onPatchInterrupted"></param>
+    /// <param name="onPatchFailed"></param>
+    /// <param name="onUpdatedPatchState"></param>
+    /// <returns></returns>
     public PatchSystem Initialize(List<AssetLabelReference> targetLabels, Action onPatchSuccess = null, Action onPatchInterrupted = null, Action onPatchFailed = null, Action<ProcessType> onUpdatedPatchState = null)
     {
         this.targetLabels = targetLabels;
@@ -75,6 +84,12 @@ public class PatchSystem : MonoBehaviour
         return this;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="onSizeOfLabel"></param>
+    /// <param name="onSizeOfAll"></param>
+    /// <returns></returns>
     public PatchSystem SetCheckDownloadSizeCallbacks(Action<long> onSizeOfLabel = null, Action<long> onSizeOfAll = null)
     {
         this.onSizeOfLabel = onSizeOfLabel;
@@ -83,7 +98,14 @@ public class PatchSystem : MonoBehaviour
         return this;
     }
 
-    public PatchSystem SetDownloadCallbacks(Action<int, int> onDownloadedLabelCount = null, Action<float> onPercentComplete = null, Action<DownloadStatus> onDownloadState = null)
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="onDownloadedLabelCount"></param>
+    /// <param name="onPercentComplete"></param>
+    /// <param name="onDownloadState"></param>
+    /// <returns></returns>
+    public PatchSystem SetDownloadCallbacks(Action<(int now, int total)> onDownloadedLabelCount = null, Action<float> onPercentComplete = null, Action<DownloadStatus> onDownloadState = null)
     {
         this.onDownloadedLabelCount = onDownloadedLabelCount;
         this.onPercentComplete = onPercentComplete;
@@ -92,6 +114,9 @@ public class PatchSystem : MonoBehaviour
         return this;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     public void StartPatchProcess()
     {
         if (!isInitialized)
@@ -223,7 +248,7 @@ public class PatchSystem : MonoBehaviour
     private IEnumerator ProcessDownload()
     {
         int count = targetLabels.Count;
-        onDownloadedLabelCount?.Invoke(0, count);
+        onDownloadedLabelCount?.Invoke((0, count));
 
         for (int i = 0; i < count; ++i)
         {
@@ -231,7 +256,7 @@ public class PatchSystem : MonoBehaviour
                 yield break;
 
             yield return StartCoroutine(ProcessAsyncOperation<object>(Addressables.DownloadDependenciesAsync(targetLabels[i].labelString), null, OnPercentComplete, OnDownloadState));
-            onDownloadedLabelCount?.Invoke(i + 1, count);
+            onDownloadedLabelCount?.Invoke((i + 1, count));
         }
     }
 
