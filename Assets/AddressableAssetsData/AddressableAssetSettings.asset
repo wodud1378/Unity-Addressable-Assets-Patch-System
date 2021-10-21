@@ -31,6 +31,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3df3e8a793d958e489e58f5a561e8865, type: 2}
   - {fileID: 11400000, guid: b87b640d47434914e9a822aeaaaf0f71, type: 2}
   - {fileID: 11400000, guid: 5814f1d4b21f1264cb9894f2f1fe8c41, type: 2}
+  - {fileID: 11400000, guid: beab924008a19d849a15d2ee4d79f601, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1
@@ -88,6 +89,7 @@ MonoBehaviour:
     - default
     - Sample_01
     - Sample_02
+    - Local
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: cff4fb5aefe4b0446aee6ba82abbd02a, type: 2}
@@ -114,7 +116,7 @@ MonoBehaviour:
           m_Key: HostingServicePort
         - m_AssemblyName: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
           m_ClassName: System.String
-          m_Data: ServerData/StandaloneWindows
+          m_Data: ServerData/StandaloneWindows;Library/com.unity.addressables/aa/Windows/StandaloneWindows
           m_Key: ContentRoot
         - m_AssemblyName: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
           m_ClassName: System.Boolean

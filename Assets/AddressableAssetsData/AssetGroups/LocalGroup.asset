@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: LocalGroup
+  m_EditorClassIdentifier: 
+  m_GroupName: LocalGroup
+  m_Data:
+    m_SerializedData: []
+  m_GUID: f2f49076cf560e4428522d36184acb81
+  m_SerializeEntries:
+  - m_GUID: bb4fea87dbae9c04ba54b8593314f236
+    m_Address: Assets/TextAssets/LocalTest/TextAssetSample03.txt
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Local
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 4cdc3c2df95463b48916bc8519ca0294
+    m_Address: Assets/TextAssets/LocalTest/TextAssetSample01.txt
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Local
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 4087cd24393edda4d8e8a9974a07b007
+    m_Address: Assets/TextAssets/LocalTest/TextAssetSample02.txt
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Local
+    m_MainAsset: {fileID: 4900000, guid: 4087cd24393edda4d8e8a9974a07b007, type: 3}
+    m_TargetAsset: {fileID: 4900000, guid: 4087cd24393edda4d8e8a9974a07b007, type: 3}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: a25dc323d58630341ada63a9d736add7, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 97e88c6656555c1489d14a3936700e9c, type: 2}
+    - {fileID: 11400000, guid: f7c7b2220c059f44a9854383b64e18c5, type: 2}

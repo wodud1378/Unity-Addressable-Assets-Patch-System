@@ -29,22 +29,22 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - Sample_02
-    m_MainAsset: {fileID: 4900000, guid: 1b2d878c84e58544887756c2ffc0c3a5, type: 3}
-    m_TargetAsset: {fileID: 4900000, guid: 1b2d878c84e58544887756c2ffc0c3a5, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 958f64ca94aa55f42831dbe14ac2c7ca
     m_Address: Assets/TextAssets/Lobby/TextAssetSample03.txt
     m_ReadOnly: 0
     m_SerializedLabels:
     - Sample_02
-    m_MainAsset: {fileID: 4900000, guid: 958f64ca94aa55f42831dbe14ac2c7ca, type: 3}
-    m_TargetAsset: {fileID: 4900000, guid: 958f64ca94aa55f42831dbe14ac2c7ca, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 077950cf1ce8f9c49ade340f81904e4e
     m_Address: Assets/TextAssets/Shop/TextAssetSample02.txt
     m_ReadOnly: 0
     m_SerializedLabels:
     - Sample_01
-    m_MainAsset: {fileID: 4900000, guid: 077950cf1ce8f9c49ade340f81904e4e, type: 3}
-    m_TargetAsset: {fileID: 4900000, guid: 077950cf1ce8f9c49ade340f81904e4e, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 3c46a56aa716b9c4cb09ce6e88c40968
     m_Address: Assets/TextAssets/Shop/TextAssetSample01.txt
     m_ReadOnly: 0
@@ -57,8 +57,8 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - Sample_01
-    m_MainAsset: {fileID: 4900000, guid: a59eba65a7b5e8242b98a418acd95f10, type: 3}
-    m_TargetAsset: {fileID: 4900000, guid: a59eba65a7b5e8242b98a418acd95f10, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: a25dc323d58630341ada63a9d736add7, type: 2}
   m_SchemaSet:
